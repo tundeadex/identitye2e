@@ -1,0 +1,21 @@
+.capclear2{
+    margin:10px auto;
+    width:38em;
+    text-align:left;
+    border:1px solid #000;
+    background:#eff2df;
+    padding:1px;
+}
+.capclear2 img {float:left;margin:5px;display:inline;}
+.capclear2 ul{
+    font-size:120%;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.capclear2 ul li{margin:1em 0}
+
+.capclear2 ul{
+    overflow:auto;/* this is the key for good browsers*/
+}
