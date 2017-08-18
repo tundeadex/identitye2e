@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.pmw.tinylog.Logger;
+import task.directory.helpers.Screenshooter;
 import task.directory.model.Cars;
 import task.directory.pages.ConfirmVehiclePage;
 import task.directory.pages.EnterRegistrationNumberPage;
@@ -54,6 +55,8 @@ public class UiTest {
             ConfirmVehiclePage confirmVehiclePage = new ConfirmVehiclePage(driver);
             Assert.assertEquals(car.make, confirmVehiclePage.getMake());
             Assert.assertEquals(car.color, confirmVehiclePage.getColor());
+            String screenshotName = car.regNo + car.make + car.color;
+            Screenshooter.takeScreenshot(driver, screenshotName);
         }
     }
 
